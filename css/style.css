@@ -24,3 +24,112 @@ footer{background:#4b2e05;color:#fff;padding:18px;text-align:center;margin-top:2
 .social-icons .whatsapp{background:#25d366}
 .social-icons .instagram{background:linear-gradient(45deg,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
 @media(max-width:800px){.header{flex-direction:column;gap:10px}.header .left img,.header .right img{height:70px}nav ul{flex-wrap:wrap}}
+/* ===== HEADER ===== */
+.site-header {
+  background-color: #8B0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.site-header img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.header-center {
+  text-align: center;
+  flex: 1;
+}
+
+.header-center h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-center h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #3e2600;
+  text-align: center;
+  position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #a0522d;
+}
+
+/* ===== MENU TOGGLE (MOBILE) ===== */
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-header {
+    flex-direction: column;
+  }
+
+  .site-header img {
+    width: 80px;
+  }
+
+  .header-center h1 {
+    font-size: 20px;
+  }
+
+  .header-center h2 {
+    font-size: 16px;
+  }
+}
